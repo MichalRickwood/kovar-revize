@@ -1,0 +1,22 @@
+<!-- @dsCard group="Components" -->
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .btn { display:inline-block; padding:14px 28px; font-size:15px; font-weight:500; text-decoration:none; cursor:pointer; }
+  .btn-primary { background:var(--ink); color:var(--paper); }
+  .btn-primary:hover { background:#000; }
+  .btn-secondary { border:1px solid var(--ink); color:var(--ink); }
+  .btn-secondary:hover { background:var(--accent); }
+  .link-contact { font-family:var(--font-display); font-weight:500; font-size:24px; color:var(--paper);
+    text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:8px; }
+  .link-contact:hover { color:var(--accent); }
+</style>
+<h3 class="mono" style="margin-bottom:16px">Tlačítka a odkazy</h3>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+  <a class="btn btn-primary" href="#">Zavolat +420 734 721 364</a>
+  <a class="btn btn-secondary" href="#">Napsat e-mail</a>
+</div>
+<p style="font-size:13px;color:var(--muted);margin:14px 0 20px">Primární = ink plocha; sekundární = obrys, hover zalije žlutou. Bez zaoblení — hrany jako na štítku.</p>
+<div style="background:var(--ink);padding:28px;display:inline-block">
+  <a class="link-contact" href="#">tomaskovar154@seznam.cz</a>
+</div>
+<p style="font-size:13px;color:var(--muted);margin-top:14px">Kontaktní odkaz na tmavé ploše — žluté podtržení, hover do žluté.</p>

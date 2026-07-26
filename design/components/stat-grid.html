@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" -->
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); max-width:760px; }
+  .cell { background:var(--paper); padding:16px 20px; }
+  .cell dt { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.18em; color:var(--muted); }
+  .cell dd { margin-top:6px; font-size:14px; font-weight:500; }
+</style>
+<h3 class="mono" style="margin-bottom:16px">Fakta pod hero (dl grid)</h3>
+<dl class="stats">
+  <div class="cell"><dt>Působnost</dt><dd>Českotřebovsko a Pardubický kraj</dd></div>
+  <div class="cell"><dt>Výstup</dt><dd>Revizní zpráva do několika dnů</dd></div>
+  <div class="cell"><dt>IČO</dt><dd>29765978 · nejsem plátce DPH</dd></div>
+</dl>
+<p style="font-size:13px;color:var(--muted);margin-top:14px">Buňky oddělené 1px mřížkou (gap přes barvu linky), žádné stíny ani zaoblení.</p>

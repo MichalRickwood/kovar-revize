@@ -1,0 +1,24 @@
+<!-- @dsCard group="Foundations" -->
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 640px; }
+  .swatch { border: 1px solid var(--line); background: var(--white); }
+  .chip { height: 72px; }
+  .meta { padding: 10px 12px; }
+  .meta b { display: block; font-size: 13px; }
+  .meta span { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+</style>
+<h3 class="mono" style="margin-bottom:16px">Barvy</h3>
+<div class="grid">
+  <div class="swatch"><div class="chip" style="background:#14171c"></div><div class="meta"><b>Ink</b><span>#14171C · text, tmavé plochy</span></div></div>
+  <div class="swatch"><div class="chip" style="background:#f7f6f2"></div><div class="meta"><b>Paper</b><span>#F7F6F2 · pozadí</span></div></div>
+  <div class="swatch"><div class="chip" style="background:#ffd400"></div><div class="meta"><b>Signal Yellow</b><span>#FFD400 · pouze akcent</span></div></div>
+  <div class="swatch"><div class="chip" style="background:#e4e2da"></div><div class="meta"><b>Line</b><span>#E4E2DA · vlasové linky</span></div></div>
+  <div class="swatch"><div class="chip" style="background:#5c6470"></div><div class="meta"><b>Muted</b><span>#5C6470 · sekundární text</span></div></div>
+  <div class="swatch"><div class="chip" style="background:#ffffff;border-bottom:1px solid var(--line)"></div><div class="meta"><b>White</b><span>#FFFFFF · karty, střídání sekcí</span></div></div>
+</div>
+<p style="max-width:640px;margin-top:16px;font-size:13px;color:var(--muted);line-height:1.6">
+  Žlutá je signální barva revizních štítků — používá se výhradně jako akcent (zvýraznění v titulku,
+  podtržení odkazů, hover), nikdy jako plocha pozadí celé sekce. Rozhraní stojí na kontrastu ink/paper
+  a vlasových linkách.
+</p>

@@ -1,0 +1,31 @@
+/* Revize Kovář — design tokens */
+:root {
+  --ink: #14171c;
+  --paper: #f7f6f2;
+  --line: #e4e2da;
+  --accent: #ffd400;
+  --muted: #5c6470;
+  --white: #ffffff;
+
+  --font-display: "Space Grotesk", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", Consolas, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  padding: 32px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+}
