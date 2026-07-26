@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Playfair_Display } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-});
-
-const playfair = Playfair_Display({
-  weight: ["700", "800", "900"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-playfair",
-});
-
-const jetbrains = JetBrains_Mono({
-  weight: ["500", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-jetbrains",
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -40,13 +29,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="cs"
-      className={`${inter.variable} ${playfair.variable} ${jetbrains.variable}`}
-    >
-      <body className="bg-paper font-body text-navy antialiased">
-        {children}
-      </body>
+    <html lang="cs" className={montserrat.variable}>
+      <body className="bg-paper font-body text-ink antialiased">{children}</body>
     </html>
   );
 }
