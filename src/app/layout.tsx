@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Inter, Space_Grotesk } from "next/font/google";
+import { Inter, JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,15 +7,16 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const grotesk = Space_Grotesk({
+const playfair = Playfair_Display({
+  weight: ["700", "800", "900"],
   subsets: ["latin", "latin-ext"],
-  variable: "--font-grotesk",
+  variable: "--font-playfair",
 });
 
-const plex = IBM_Plex_Mono({
-  weight: ["400", "500"],
+const jetbrains = JetBrains_Mono({
+  weight: ["500", "700"],
   subsets: ["latin", "latin-ext"],
-  variable: "--font-plex",
+  variable: "--font-jetbrains",
 });
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
     siteName: "Revize Kovář",
     locale: "cs_CZ",
     type: "website",
+    images: [{ url: "/hero.jpg", width: 1408, height: 699 }],
   },
 };
 
@@ -38,10 +40,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="cs">
-      <body
-        className={`${inter.variable} ${grotesk.variable} ${plex.variable} bg-paper font-body text-ink antialiased`}
-      >
+    <html
+      lang="cs"
+      className={`${inter.variable} ${playfair.variable} ${jetbrains.variable}`}
+    >
+      <body className="bg-paper font-body text-navy antialiased">
         {children}
       </body>
     </html>
